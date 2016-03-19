@@ -62,11 +62,11 @@ usage() {
 	cat <<-EOF
 		Usage: alpine-bootstrap --path=PATH [options...] [PKG...]
 
-		PKG  Additional APK package(s) to install into the container.
+		PKG  Additional APK package(s) to install into the image.
 
 		Options:
 		   -p PATH, --path=PATH   Place rootfs under PATH
-		   -a ARCH, --arch=ARCH   The container architecture (e.g. x86, x86_64); defaults
+		   -a ARCH, --arch=ARCH   The image architecture (e.g. x86, x86_64); defaults
 		                          to the host arch.
 		   -d, --debug            Run this script in a debug mode (set -x and wget w/o -q).
 		   -F, --flush-cache      Remove cached files before build.
